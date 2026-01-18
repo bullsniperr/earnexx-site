@@ -68,11 +68,13 @@ export default function Home() {
       </section>
 
       {/* Team */}
-      <section style={{ marginTop: '60px' }}>
-        <h2>Team</h2>
-        <p><strong>BullSniperr – Founder & Product Lead:</strong> Web3 content, community management, ecosystem growth</p>
-        <p>External contributors & advisors: Smart contract development, frontend engineering, security review</p>
-      </section>
+    <section id="founder">
+  <h2>Founder</h2>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+    <Image src={founder} alt="BullSniperr - Founder" width={100} height={100} style={{ borderRadius: '50%' }} />
+    <p>BullSniperr – Founder & Product Lead. Driving product strategy, community growth, and development coordination.</p>
+  </div>
+</section>
 
       {/* Footer */}
       <footer style={{ textAlign: 'center', marginTop: '80px', paddingBottom: '50px' }}>
