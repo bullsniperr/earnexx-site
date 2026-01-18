@@ -1,7 +1,9 @@
-earnexx-site/
-  ├─ app/
-  │   └─ page.tsx
-  ├─ public/
-  │   ├─ roadmap.png
-  │   └─ bullsniperr.png
-  └─ package.json
+import Image from 'next/image'
+import roadmap from '../public/roadmap.png'
+
+<section id="roadmap">
+  <h2>Roadmap</h2>
+  <Image src={roadmap} alt="Earnexx Roadmap" width={800} height={600} />
+</section>
+
+import founder from '../public/bullsniperr.png'
