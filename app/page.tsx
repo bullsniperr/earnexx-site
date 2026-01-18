@@ -1,51 +1,67 @@
-import Image from 'next/image';
-import roadmapImg from '../public/roadmap.png';
-import founderImg from '../public/bullsniperr.png';
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main style={{ fontFamily: 'sans-serif', lineHeight: '1.6', padding: '2rem', maxWidth: '900px', margin: 'auto' }}>
+    <main className="min-h-screen bg-gray-50 flex flex-col items-center px-4 py-8">
+      
       {/* Hero Section */}
-      <section style={{ textAlign: 'center', marginBottom: '3rem' }}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Earnexx</h1>
-        <p style={{ fontSize: '1.2rem', marginTop: '1rem' }}>
-          On-chain task rewards and community growth infrastructure on Solana.
+      <section className="text-center max-w-3xl mb-16">
+        <h1 className="text-5xl font-bold mb-4">Earnexx</h1>
+        <p className="text-gray-700 text-lg">
+          On-Chain Task Rewards and Community Growth Infrastructure on Solana.
         </p>
-        <a href="https://linksharing.samsungcloud.com/7egqTvz4Jy8A" target="_blank" rel="noopener noreferrer" style={{ marginTop: '1rem', display: 'inline-block', padding: '0.5rem 1rem', backgroundColor: '#1a73e8', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>
+        <Link
+          href="https://linksharing.samsungcloud.com/7egqTvz4Jy8A"
+          target="_blank"
+          className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+        >
           View Whitepaper
-        </a>
-      </section>
-
-      {/* Features Section */}
-      <section style={{ marginBottom: '3rem' }}>
-        <h2>Core Features</h2>
-        <ul>
-          <li>Task-based rewards with on-chain verification</li>
-          <li>Transparent and auditable reward system</li>
-          <li>Wallet-based identity & reputation tracking</li>
-          <li>Scalable infrastructure on Solana</li>
-        </ul>
+        </Link>
       </section>
 
       {/* Founder Section */}
-      <section style={{ textAlign: 'center', marginBottom: '3rem' }}>
-        <h2>Founder</h2>
-        <Image src={founderImg} alt="BullSniperr – Founder" width={150} height={150} style={{ borderRadius: '50%' }} />
-        <p style={{ marginTop: '1rem' }}>BullSniperr – Founder & Product Lead</p>
-        <p>Responsible for product direction, community strategy, and early development coordination.</p>
+      <section className="flex flex-col items-center mb-16">
+        <h2 className="text-3xl font-semibold mb-4">Founder</h2>
+        <Image
+          src="/bullsniperr.png"
+          alt="BullSniperr"
+          width={150}
+          height={150}
+          className="rounded-full border-2 border-gray-300"
+        />
+        <p className="text-gray-700 text-center mt-4 max-w-xl">
+          BullSniperr – Founder & Product Lead. Focused on Web3 content, community management, and ecosystem growth.
+        </p>
+      </section>
+
+      {/* Features Section */}
+      <section className="max-w-3xl mb-16">
+        <h2 className="text-3xl font-semibold mb-6 text-center">Core Features</h2>
+        <ul className="space-y-4 text-gray-700">
+          <li>✅ Task-Based Rewards: Earn by completing verifiable tasks.</li>
+          <li>✅ On-Chain Transparency: All actions and rewards recorded on Solana.</li>
+          <li>✅ Wallet-Based Identity: Pseudonymous, permissionless participation.</li>
+          <li>✅ Scalable Infrastructure: High-volume participation with low fees.</li>
+        </ul>
       </section>
 
       {/* Roadmap Section */}
-      <section style={{ textAlign: 'center', marginBottom: '3rem' }}>
-        <h2>Roadmap</h2>
-        <Image src={roadmapImg} alt="Earnexx Roadmap" width={800} height={400} />
+      <section className="flex flex-col items-center mb-16">
+        <h2 className="text-3xl font-semibold mb-4">Roadmap</h2>
+        <Image
+          src="/roadmap.png"
+          alt="Earnexx Roadmap"
+          width={600}
+          height={400}
+          className="rounded-lg border border-gray-200"
+        />
       </section>
 
-      {/* Contact / Footer */}
-      <footer style={{ textAlign: 'center', marginTop: '4rem', padding: '2rem 0', borderTop: '1px solid #ddd' }}>
-        <p>Contact: <a href="mailto:earnexx01@gmail.com">earnexx01@gmail.com</a></p>
-        <p>&copy; 2026 Earnexx</p>
+      {/* Footer */}
+      <footer className="text-gray-500 text-sm mt-16 text-center">
+        &copy; 2026 Earnexx. All rights reserved.
       </footer>
     </main>
-  );
+  )
 }
