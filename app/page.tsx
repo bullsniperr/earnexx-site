@@ -1,87 +1,51 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import roadmapImg from '../public/roadmap.png';
+import founderImg from '../public/bullsniperr.png';
 
 export default function Home() {
   return (
-    <main style={{ fontFamily: 'sans-serif', maxWidth: '900px', margin: '0 auto', padding: '0 20px' }}>
-
+    <main style={{ fontFamily: 'sans-serif', lineHeight: '1.6', padding: '2rem', maxWidth: '900px', margin: 'auto' }}>
       {/* Hero Section */}
-      <section style={{ textAlign: 'center', marginTop: '50px' }}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#1a73e8' }}>Earnexx</h1>
-        <p style={{ fontSize: '1.2rem', marginTop: '10px' }}>
-          On-Chain Task Rewards and Community Growth Infrastructure on Solana
+      <section style={{ textAlign: 'center', marginBottom: '3rem' }}>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Earnexx</h1>
+        <p style={{ fontSize: '1.2rem', marginTop: '1rem' }}>
+          On-chain task rewards and community growth infrastructure on Solana.
         </p>
-        <div style={{ marginTop: '20px' }}>
-          <Link href="https://github.com/bullsniperr/earnexx">
-            <a style={{ marginRight: '15px', color: '#1a73e8', textDecoration: 'underline' }}>GitHub</a>
-          </Link>
-          <Link href=https://linksharing.samsungcloud.com/7egqTvz4Jy8A>
-            <a style={{ color: '#1a73e8', textDecoration: 'underline' }}>Whitepaper</a>
-          </Link>
-        </div>
+        <a href="YOUR_WHITEPAPER_LINK" target="_blank" rel="noopener noreferrer" style={{ marginTop: '1rem', display: 'inline-block', padding: '0.5rem 1rem', backgroundColor: '#1a73e8', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>
+          View Whitepaper
+        </a>
       </section>
 
-      {/* About / Problem & Solution */}
-      <section style={{ marginTop: '60px' }}>
-        <h2>Problem & Solution</h2>
-        <p>
-          Web3 projects struggle to grow real communities, measure genuine contributions, and distribute rewards transparently.
-          <strong> Earnexx solves this by providing on-chain task tracking, automatic rewards, and verifiable participation.</strong>
-        </p>
-      </section>
-
-      {/* Core Features */}
-      <section style={{ marginTop: '60px' }}>
+      {/* Features Section */}
+      <section style={{ marginBottom: '3rem' }}>
         <h2>Core Features</h2>
         <ul>
-          <li><strong>Task-Based Rewards:</strong> Community engagement, content creation, testing, campaign participation</li>
-          <li><strong>On-Chain Transparency:</strong> All claims are verifiable and auditable on Solana</li>
-          <li><strong>Wallet-Based Identity:</strong> Pseudonymous participation and on-chain reputation</li>
-          <li><strong>Scalable Infrastructure:</strong> Built on Solana for high-volume, low-cost participation</li>
+          <li>Task-based rewards with on-chain verification</li>
+          <li>Transparent and auditable reward system</li>
+          <li>Wallet-based identity & reputation tracking</li>
+          <li>Scalable infrastructure on Solana</li>
         </ul>
       </section>
 
-      {/* How It Works */}
-      <section style={{ marginTop: '60px' }}>
-        <h2>How It Works</h2>
-        <ol>
-          <li>Projects define tasks aligned with real value</li>
-          <li>Users complete tasks via Solana wallets</li>
-          <li>Rewards are distributed automatically</li>
-          <li>Participation history builds verifiable reputation</li>
-        </ol>
+      {/* Founder Section */}
+      <section style={{ textAlign: 'center', marginBottom: '3rem' }}>
+        <h2>Founder</h2>
+        <Image src={founderImg} alt="BullSniperr – Founder" width={150} height={150} style={{ borderRadius: '50%' }} />
+        <p style={{ marginTop: '1rem' }}>BullSniperr – Founder & Product Lead</p>
+        <p>Responsible for product direction, community strategy, and early development coordination.</p>
       </section>
 
-      {/* Roadmap */}
-      <section style={{ marginTop: '60px' }}>
+      {/* Roadmap Section */}
+      <section style={{ textAlign: 'center', marginBottom: '3rem' }}>
         <h2>Roadmap</h2>
-        {/* Placeholder for infographic */}
-        <div style={{ textAlign: 'center', marginTop: '20px', border: '1px dashed #ccc', padding: '20px' }}>
-          <p>Roadmap Infographic Here</p>
-        </div>
-        <ul style={{ marginTop: '20px' }}>
-          <li><strong>Phase 1 – MVP:</strong> Smart contracts, devnet testing</li>
-          <li><strong>Phase 2 – Beta Launch:</strong> Web interface, closed testing, initial partners</li>
-          <li><strong>Phase 3 – Mainnet Release:</strong> Security audit, public launch, expanded reward logic</li>
-          <li><strong>Phase 4 – Ecosystem Expansion:</strong> Multi-project onboarding, analytics, reputation layers</li>
-        </ul>
+        <Image src={roadmapImg} alt="Earnexx Roadmap" width={800} height={400} />
       </section>
 
-      {/* Team */}
-    <section id="founder">
-  <h2>Founder</h2>
-  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-    <Image src={founder} alt="BullSniperr - Founder" width={100} height={100} style={{ borderRadius: '50%' }} />
-    <p>BullSniperr – Founder & Product Lead. Driving product strategy, community growth, and development coordination.</p>
-  </div>
-</section>
-
-      {/* Footer */}
-      <footer style={{ textAlign: 'center', marginTop: '80px', paddingBottom: '50px' }}>
-        <p>Contact: <a href="mailto:earnexx01@gmail.com" style={{ color: '#1a73e8', textDecoration: 'underline' }}>earnexx01@gmail.com</a></p>
-        <p>&copy; 2026 Earnexx. All rights reserved.</p>
+      {/* Contact / Footer */}
+      <footer style={{ textAlign: 'center', marginTop: '4rem', padding: '2rem 0', borderTop: '1px solid #ddd' }}>
+        <p>Contact: <a href="mailto:earnexx01@gmail.com">earnexx01@gmail.com</a></p>
+        <p>&copy; 2026 Earnexx</p>
       </footer>
-
     </main>
-  )
-        }
+  );
+}
