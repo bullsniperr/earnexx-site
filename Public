@@ -1,0 +1,7 @@
+earnexx-site/
+  ├─ app/
+  │   └─ page.tsx
+  ├─ public/
+  │   ├─ roadmap.png
+  │   └─ bullsniperr.png
+  └─ package.json
