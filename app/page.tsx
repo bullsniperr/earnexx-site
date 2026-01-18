@@ -11,7 +11,7 @@ export default function Home() {
         <p style={{ fontSize: '1.2rem', marginTop: '1rem' }}>
           On-chain task rewards and community growth infrastructure on Solana.
         </p>
-        <a href="YOUR_WHITEPAPER_LINK" target="_blank" rel="noopener noreferrer" style={{ marginTop: '1rem', display: 'inline-block', padding: '0.5rem 1rem', backgroundColor: '#1a73e8', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>
+        <a href="https://linksharing.samsungcloud.com/7egqTvz4Jy8A" target="_blank" rel="noopener noreferrer" style={{ marginTop: '1rem', display: 'inline-block', padding: '0.5rem 1rem', backgroundColor: '#1a73e8', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>
           View Whitepaper
         </a>
       </section>
